@@ -1,0 +1,219 @@
+<style>
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/harvard.jpg");
+    height: 50vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 1rem;
+  }
+
+  .hero-text {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    color: white;
+  }
+
+  .hero-title-mobile {
+    font-weight: 800;
+    font-size: 2.25em;
+    text-transform: uppercase;
+    margin-bottom: 0%;
+  }
+
+  .hero-subtitle-mobile {
+    font-weight: 500;
+    font-size: 1.125em;
+  }
+
+  .hero-subtitle-desktop {
+    display: none;
+  }
+
+  .sectionBar {
+    padding: 1rem;
+    background: #ED6C02;
+    color: white;
+  }
+
+  .sectionBar p {
+    font-weight: 800;
+    font-size: 1.5em;
+  }
+
+  .funcionamiento-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/study.jpg");
+    height: 30vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 1rem
+  }
+
+  .funcionamiento-text {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+
+    font-weight: 600;
+    font-size: 1.125em;
+    line-height: 130%;
+    color: white;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .hero-image {
+      height: 100vh;
+    }
+
+    .hero-text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+
+    .hero-subtitle-mobile {
+      display: none;
+    }
+
+    .hero-subtitle-desktop {
+      display: block;
+      font-weight: 800;
+      font-size: 1.5em;
+    }
+
+    .sectionBar p {
+      text-align: center;
+    }
+
+    .funcionamiento-image {
+      height: 45vh;
+    }
+
+    .funcionamiento-text {
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-weight: 600;
+      font-size: 3em;
+      line-height: 130%;
+    }
+  } 
+</style>
+
+<section id="inicio">
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 class="hero-title-mobile">APRUEBA TODAS TUS MATERIAS.</h1>
+      <p class="hero-subtitle-mobile">
+        Con Mator
+      </p>
+      <p class="hero-subtitle-desktop">
+        Entrega rapida • Alta calidad • Confiaza
+      </p>
+      <a href="#comofunciona" class="waves-effect waves-light btn btn-orange" style="font-size: 0.938em; font-weight: 500;">
+        empezar
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="comofunciona">
+  <div class="sectionBar">
+    <p>
+      ¿Cómo funciona?
+    </p>
+  </div>
+  <div class="funcionamiento-image">
+    <div class="funcionamiento-text">
+      <p>
+        Completa el formulario con tu informacion.
+        Nuestro equipo se pondrá en contacto contigo
+        para la resolución y negociación de tus tareas.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sectionBar">
+    <p>
+      Información necesaria.
+    </p>
+  </div>
+  <div class="formulario" style="margin-top: 2rem; padding: 1rem;">
+    <form action="/" method="post">
+      <div class="row">
+        <form class="col s12 m6">
+          <div class="row">
+            <div class="input-field col s12">
+              <input placeholder="Placeholder" id="nombre_completo" name="nombre_completo" type="text" class="validate" required="true">
+              <label for="nombre_completo">Nombre completo</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input placeholder="Placeholder" id="correo_electronico" name="correo_electronico" type="email" class="validate" required="true">
+              <label for="correo_electronico">Correo electrónico</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input placeholder="1 (809-803-2434)" id="telefono" name="telefono" type="tel" class="validate" required="true">
+              <label for="telefono">Numero telefonico</label>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="input-field col s12">
+              <select id="materia_select" name="materia_select" required="true">
+                <option value="" disabled selected>Elige una materia</option>
+                <option value="Matematicas">Matemáticas</option>
+                <option value="Humanidades">Tecnología</option>
+                <option value="Tecnologia">Tecnología</option>
+                <option value="Ingenierias">Ingenierías</option>
+                <option value="Otros">Otros</option>
+              </select>
+              <label>Materia</label>
+            </div>
+          </div>
+        
+          <div class="row">
+            <div class="input-field col s12">
+              <select id="tipo" name="tipo" required="true">
+                <option value="" disabled selected>Tipo</option>
+                <option value="Tarea">Tarea</option>
+                <option value="Examen">Examen</option>
+                <option value="Tutoria">Tutoria</option>
+              </select>
+              <label>Tipo</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="descripcion" name="descripcion" class="materialize-textarea" required="true"></textarea>
+              <label for="descripcion">Descripcion y requisitos</label>
+            </div>
+          </div>
+
+          <button class="waves-effect waves-light btn-large btn-orange" type="submit">Enviar</button>
+
+        </form>
+      </div>
+    </form>
+  </div>
+</section>
+
+<script>
+  $('select').formSelect();
+</script>

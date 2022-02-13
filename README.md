@@ -1,1 +1,2 @@
-# Mator1
+# Mator
+Repository for the Mator project

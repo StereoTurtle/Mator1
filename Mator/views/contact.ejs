@@ -1,0 +1,36 @@
+<div class="formulario" style="margin-top: 2rem; padding: 1rem;">
+  <form action="/contact" method="post">
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <input placeholder="Placeholder" id="nombre_completo" name="nombre_completo" type="text" class="validate" required="true">
+            <label for="nombre_completo">Nombre completo</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input placeholder="Placeholder" id="correo_electronico" name="correo_electronico" type="email" class="validate" required="true">
+            <label for="correo_electronico">Correo electrónico</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input placeholder="1 (809-803-2434)" id="telefono" name="telefono" type="tel" class="validate" required="true">
+            <label for="telefono">Numero telefonico</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="mensaje" name="mensaje" class="materialize-textarea" required="true"></textarea>
+            <label for="mensaje">Mensaje</label>
+          </div>
+        </div>
+
+        <button class="waves-effect waves-light btn-large btn-orange" type="submit">Enviar</button>
+
+      </form>
+    </div>
+  </form>
+</div>
